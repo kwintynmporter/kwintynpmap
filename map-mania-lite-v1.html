@@ -1,0 +1,28 @@
+<!doctype html> 
+<!--Author: Kwintyn Porter
+    Class: Web and Distributed Programming
+    Project: Map Mania v1
+    Session: su18-cpsc-24700-lt1
+    Description: First version of Map Mania Proj. [PA3] -->
+<html lang="en"> 
+    <head> 
+        <title> Map Mania Lite V1 </title>
+        <meta name="viewport" content="initial-scale=1.0"
+        <meta charset="UTF-8"> 
+        <script src="map-mania-lite-v1.js"></script> 
+        <link rel="stylesheet" href="map-mania-lite-v1.css"> 
+    </head>
+    <body onload="initApplication()">
+    <h1> Stay local or travel far? </h1>
+    <h4> (zoom out, take a look around the world...)</h4>
+    Hint: <input id="hint-identifier" type="text" value="" size="30" disabled><br><br>
+    Score: <input id="score-identifier" type="text" value="" size="2" disabled><br><br>
+
+    <div id="myMapID"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEJXZ5ONf8RrlDwhEh1NicDhRL0ApemZI&callback=initMap"
+        async defer>
+    </script>
+  </body> 
+</html>
+
+
